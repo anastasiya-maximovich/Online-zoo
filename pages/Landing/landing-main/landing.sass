@@ -1,0 +1,276 @@
+//colors
+$green: #4b9200
+$black-blue: #333b41
+$grey: #767474
+$grey-smoky: #ababab
+$grey-light: #f1f3f2
+$glass-white:   rgba(253, 253, 255, 0.52)
+$red: #d31414
+$yellow: #fffe2e
+$org1: #F9804B
+$org2: #FE9013
+
+//backgrounds
+$panda: url("../../../assets/images/bg/bg_giantPanda.png")
+$wel-flower: url("../../../assets/images/flowers/flower.svg")
+
+@mixin orange()
+  background: linear-gradient(113.96deg, $org1 1.49%, $org2 101.44%)
+
+@mixin button()
+  height: 54px
+  width: 298px
+  border-style: none
+  border-radius: 25px
+  @include orange()
+  color: #fff
+  text-transform: uppercase
+  font-size: 16px
+  font-weight: 500
+  line-height: 22px
+  text-align: center
+  cursor: pointer
+  overflow: visible
+  &:hover
+    background: $org1
+    outline: 0
+    outline-offset: 0
+    transform: scale(1.01)
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5)
+  &:active
+    background: $green
+    outline: 0
+    outline-offset: 0
+    transform: translateY(2px)
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)
+
+.arrow
+  width: 62px
+  height: 62px
+  @include orange()
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  &:hover
+    background: $org1
+    outline: 0
+    outline-offset: 0
+  &:active
+    background: $green
+    outline: 0
+    outline-offset: 0
+  img
+    display: block
+    height: 8px
+    width: 16px
+
+body
+  margin: 0
+  padding: 0
+  position: relative
+  font-family: "Roboto", sans-serif
+
+h1
+  display: none
+/* ==== header ==== */
+.header
+  position: absolute
+  width: 100%
+  height: 80px
+  background: #000
+  &__wrapper
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    align-items: center
+.logo
+ margin: 13px 64px 0 30px 
+.menu
+  width: 525px
+.list
+  list-style-type:  none
+  margin: 8px 0 0
+  padding: 0
+  list-style-type: none
+  display: flex
+  justify-content: space-between
+  &__item
+    display: block 
+  &__link
+    color: #fff
+    text-decoration: none
+    &:active
+      color: $org1
+    &.active
+      color: $org1 
+
+/* ===== .sub__header =====*/
+.sub__header
+  width: 100%
+  height: 780px
+  background: $panda center (center / cover) no-repeat
+  &_wrapper
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    justify-content: flex-end 
+  &-circle
+    width: 465px
+    height: 465px
+    @include orange()
+    margin: 90px 130px 0 0
+    border-radius: 50%
+  &_text
+    width: 500px
+    height: 400px
+    position: absolute
+    right: 200px
+    top: 162px
+    font-size: 106px
+    font-style: normal
+    font-weight: 700
+    line-height: 80px
+    text-align: center
+    color: #fff
+    text-transform: uppercase 
+  
+.text-color
+  color: $yellow
+
+button
+  margin: 69px 0 0 174px
+  @include button()
+
+/* ==== wilderness ===== */
+.wilderness
+  width: 100%
+  height: 100%
+  margin-top: 140px
+  position: relative
+  &_wrapper
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-text
+    margin-left: 87px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .title
+      font-size: 48px
+      font-style: normal
+      font-weight: 400
+      line-height: 58px
+      margin: 0
+    p
+      font-size: 16px
+      font-weight: 400
+      line-height: 21px
+    .sub-title
+      font-size: 24px
+      font-weight: 400
+      line-height: 29px
+      margin: 0
+  &-outimg
+    position: absolute
+    width: 200px
+    height: 560px
+    background: $wel-flower
+    right: -5rem
+    top: -130px
+
+/* ==== pets ==== */
+
+.pets
+  width: 100%
+  height: 1286px
+  margin-top: 20px
+  position: relative
+  display: flex
+  &_wrapper
+    margin: 0 auto
+    width: 1200px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 5
+    &-cards
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      button
+        display: block
+        margin: 0 auto
+        margin-top: 80px 
+  &__card
+    width: 366px
+    height: 426px
+    position: relative
+    border: 1px solid $org2
+    margin-bottom: 20px
+    box-sizing: border-box
+    border-radius: 5px
+    overflow: hidden
+    cursor: pointer
+    &-img
+      display: block
+      width: 100%
+      height: 366px
+      transition: all 1s
+      &:hover
+        transform: scale(1.1)
+    &_inf
+      display: flex
+      justify-content: space-between
+      &-text
+        padding: 4px 0 0 15px
+        display: flex
+        flex-direction: column
+        h4
+          margin: 0
+          font-size: 16px
+          font-weight: 500
+          line-height: 22px
+          text-transform: uppercase
+        p
+          margin: 0
+          font-size: 15px
+          font-weight: 300
+          line-height: 18px
+      img
+        display: block
+        padding: 2px 12px 0 0
+  &__flower-left
+    position: absolute
+    bottom: 0
+    left: -4rem
+  &__flower-right
+    position: absolute
+    bottom: 0
+    right: -4rem
+    
+.arrow
+  &.beffore
+    position: absolute
+    margin: 0
+    left: -4.3rem
+    bottom: 53%
+  &.after
+    position: absolute
+    margin: 0
+    right: -4.3rem
+    bottom: 53%
+/* === footer === */
+.footer-wrapper
+  width: 1200px
+  height: 426px
+  margin: 0 auto
+  background: #000
+
