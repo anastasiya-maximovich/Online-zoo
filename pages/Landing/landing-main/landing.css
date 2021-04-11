@@ -15,12 +15,6 @@
   cursor: pointer;
 }
 
-.arrow:hover {
-  background: #F9804B;
-  outline: 0;
-  outline-offset: 0;
-}
-
 .arrow:active {
   background: #4b9200;
   outline: 0;
@@ -167,6 +161,7 @@ button {
 
 button:hover {
   background: #F9804B;
+  color: #4b9200;
   outline: 0;
   outline-offset: 0;
   -webkit-transform: scale(1.01);
@@ -177,6 +172,7 @@ button:hover {
 
 button:active {
   background: #4b9200;
+  color: #fff;
   outline: 0;
   outline-offset: 0;
   -webkit-transform: translateY(2px);
