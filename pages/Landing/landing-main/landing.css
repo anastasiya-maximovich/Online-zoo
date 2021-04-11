@@ -727,11 +727,225 @@ button:active {
 }
 
 /* === footer === */
-.footer-wrapper {
-  margin: 0 auto;
-  width: 1200px;
+.footer {
+  width: 100%;
   height: 426px;
   margin: 0 auto;
   background: #000;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.footer__wrapper-title {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__wrapper-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #333b41;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.footer__wrapper-subtitle .email {
+  width: 228px;
+  height: 42px;
+  padding-left: 10px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 2px solid #FE9013;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.footer__wrapper-subtitle .email:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #d31414;
+  color: #d31414;
+}
+
+.footer__wrapper-subtitle .email:invalid ~ input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #d31414;
+  color: #d31414;
+}
+
+.footer__wrapper-subtitle .email-btn {
+  width: 129px;
+  height: 42px;
+  margin-left: 10px;
+  border: 2px solid #FE9013;
+  border-radius: 5px;
+  background: #f1f3f2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.footer__wrapper-subtitle .email:hover, .footer__wrapper-subtitle .email-btn:hover {
+  -webkit-box-shadow: 1px 3px 4px #fae2e280;
+          box-shadow: 1px 3px 4px #fae2e280;
+}
+
+.footer__wrapper-subtitle .email:active, .footer__wrapper-subtitle .email-btn:active {
+  -webkit-box-shadow: 1px 3px 4px #fae2e280;
+          box-shadow: 1px 3px 4px #fae2e280;
+  color: #4b9200;
+}
+
+.footer-btn {
+  margin: 0;
+  border-radius: 5px;
+}
+
+.footer-btn:active, .footer-btn:hover {
+  -webkit-box-shadow: 2px 2px 2px rgba(241, 92, 92, 0.4);
+          box-shadow: 2px 2px 2px rgba(241, 92, 92, 0.4);
+}
+
+.footer__social {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__social .list {
+  margin: 0;
+}
+
+.footer__social-inf {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 21px;
+}
+
+.footer__social-inf a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.footer__social-inf a:hover {
+  color: #FE9013;
+  text-decoration: underline;
+}
+
+.footer__social-media {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.circle {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background: rgba(253, 253, 255, 0.52);
+  border-radius: 50%;
+}
+
+.circle:hover {
+  background: #4b9200;
+}
+
+.social-media-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media-type:hover .circle {
+  color: #4b9200;
+}
+
+.social-media-type:hover .social_name {
+  color: #4b9200;
+}
+
+.social-media-type:active .circle {
+  background: #d31414;
+}
+
+.social-media-type:active .social_name {
+  background: #d31414;
+}
+
+.social_name {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  line-height: 140%;
+}
+
+.facebook {
+  background-image: url("../../../assets/icons/media/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+}
+
+.twitter {
+  background-image: url("../../../assets/icons/media/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+}
+
+.instagram {
+  background-image: url("../../../assets/icons/media/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+}
+
+.youtube {
+  background-image: url("../../../assets/icons/media/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
 }
 /*# sourceMappingURL=landing.css.map */
