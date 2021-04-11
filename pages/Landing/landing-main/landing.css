@@ -60,6 +60,11 @@ h1 {
 
 .logo {
   margin: 13px 64px 0 30px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
 
 .menu {
@@ -86,6 +91,10 @@ h1 {
 .list__link {
   color: #fff;
   text-decoration: none;
+}
+
+.list__link:hover {
+  color: #4b9200;
 }
 
 .list__link:active {
@@ -236,6 +245,7 @@ button:active {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
+  color: #333b41;
   margin: 0;
 }
 
@@ -244,7 +254,7 @@ button:active {
   width: 200px;
   height: 560px;
   background: url("../../../assets/images/flowers/flower.svg");
-  right: -5rem;
+  right: -4rem;
   top: -130px;
 }
 
@@ -427,6 +437,128 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pick-friend__wrapper button {
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.pick-friend__wrapper .title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  color: #FE9013;
+}
+
+.pick-friend__wrapper .subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #333b41;
+  margin-top: 1.5rem;
+}
+
+.pick-friend__wrapper .covid-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #333b41;
+}
+
+.pick-friend__wrapper .text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #333b41;
+}
+
+.pick-friend__wrapper h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+  color: #333b41;
+}
+
+.pick-friend__pay {
+  width: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pick-friend__pay-card {
+  height: 244px;
+  width: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pick-friend__pay-arrow {
+  margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 168px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FE9013;
+  border-radius: 5px;
+}
+
+.card-img img {
+  display: block;
+}
+
+.card-descr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333b41;
+  text-align: center;
+}
+
+.link-color {
+  color: #FE9013;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-color:hover {
+  color: #F9804B;
+  text-decoration: underline;
+}
+
+.link-color:active {
+  color: #4b9200;
 }
 
 /* === footer === */
